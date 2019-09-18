@@ -103,5 +103,8 @@ nav .links li a:hover {
   nav .profile {
     top: 100px;
   }
+  nav .logo {
+    left: calc(100vw - 70px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
