@@ -22,8 +22,10 @@ toggleNav.addEventListener('click', function() {
 //If the user clicks outside of the navbar while it's open, it will close
 document.addEventListener('click', function(e) {
     if(e.target.closest('nav') || e.target.closest('.navbarLink')) return;
+    if(screen.orientation.angle === 0) {
     navbar.style.width = '0';
     logo.style.left = '10px';
+    }
 });
 
 

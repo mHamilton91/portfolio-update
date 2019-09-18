@@ -36,6 +36,7 @@ nav .logo {
   width: 60px;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -moz-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 10;
@@ -47,6 +48,7 @@ nav p {
   left: 20px;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -moz-tap-highlight-color: rgba(255, 255, 255, 0);
   font-size: 2em;
   white-space: nowrap;
   font-family: 'Josefin Sans', sans-serif;
