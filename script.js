@@ -39,9 +39,11 @@ document.addEventListener('click', function(e) {
 window.addEventListener('resize', function() {
     if(window.innerHeight > 700) {
         navbar.style.width = '0';
+        navbar.style.height = '100vh';
         logo.style.left = '10px';
     } else {
         navbar.style.width = '100vw';
+        navbar.style.height = '80px';
         logo.style.left = 'calc(100vw - 70px)';
     }
 });
