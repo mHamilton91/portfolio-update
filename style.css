@@ -23,7 +23,7 @@ nav {
   width: 0;
   background-color: rgba(51, 51, 51, 0.8);
   color: #FFF;
-  overflow-x: hidden;
+  overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 9;
@@ -91,7 +91,7 @@ nav .links li a:hover {
   color: #00ada5;
 }
 
-@media (orientation: landscape) {
+@media only screen and (max-height: 700px) {
   nav {
     position: absolute;
     top: 0;
