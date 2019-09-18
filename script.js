@@ -27,7 +27,7 @@ window.addEventListener('orientationchange', function() {
 })
 
 function testOrientation() {
-    if(screen.orientation.angle === 0 && window.innerHeight > 500) {
+    if(screen.orientation.angle === 0) {
         console.log(screen.orientation.angle);
         navbar.style.width = '0';
         logo.style.left = '10px';
