@@ -87,7 +87,7 @@ nav .links li a:hover {
   color: #00ada5;
 }
 
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) {
   nav {
     position: absolute;
     top: 0;

@@ -16,6 +16,6 @@ body {
 
 @import './navbar-portrait';
 
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) {
     @import './navbar-landscape';
 }
