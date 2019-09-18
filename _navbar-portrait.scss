@@ -1,0 +1,62 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: rgba(51,51,51, 0.8);
+    color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9;
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    p {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        cursor: pointer;
+        font-size: 2em;
+        white-space: nowrap;
+        font-family: 'Josefin Sans', sans-serif;
+        span {
+            color: #00ada5;
+        }
+    }
+    .profile {
+        width: 200px;
+        border: 2px solid #00ada5;
+        border-radius: 50%;
+        position: absolute;
+        top: 25%;
+        left: 65px;
+        
+    }
+    .links {
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        white-space: nowrap;
+        text-align: center;
+        li {
+            list-style: none;
+            margin: 50px 0;
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 1.5em;
+                font-family: 'Josefin Sans', sans-serif;
+                &:hover {
+                    color: #00ada5;
+                }
+            }
+        }
+    }
+}

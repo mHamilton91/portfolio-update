@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #000 url("images/background.jpg") no-repeat fixed center center;
+    background-size: cover;
+}
+
+@import './navbar-portrait';
+
+@media (orientation: landscape) and (max-height: 500px) {
+    @import './navbar-landscape';
+}
