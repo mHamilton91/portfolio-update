@@ -16,6 +16,12 @@ toggleNav.addEventListener('click', function() {
             navbar.style.width = '350px';
             logo.style.left = '275px';
         }
+    } else {
+        if(navbar.offsetHeight === 350) {
+            navbar.style.height = '80px';
+        } else {
+            navbar.style.height = '350px';
+        }
     }
 });
 
@@ -25,6 +31,8 @@ document.addEventListener('click', function(e) {
     if(window.innerHeight > 700) {
     navbar.style.width = '0';
     logo.style.left = '10px';
+    } else {
+        navbar.style.height = '80px';
     }
 });
 

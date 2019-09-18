@@ -7,8 +7,18 @@ nav {
     background-color: rgba(51, 51, 51, 0.8);
     .profile {
         top: 100px;
+        left: 3%;
     }
     .logo {
         left: calc(100vw - 70px);
+    }
+    .links {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            margin: 10px 0;
+        }
     }
 }

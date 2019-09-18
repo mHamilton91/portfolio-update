@@ -102,9 +102,20 @@ nav .links li a:hover {
   }
   nav .profile {
     top: 100px;
+    left: 3%;
   }
   nav .logo {
     left: calc(100vw - 70px);
+  }
+  nav .links {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  nav .links li {
+    margin: 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
