@@ -16,6 +16,13 @@ body {
 
 @import './navbar-portrait';
 
-@media only screen and (max-height: 700px) {
+
+
+@media screen and (max-height: 650px) {
     @import './navbar-landscape';
+
+}
+
+@media screen and (max-width: 350px) {
+    @import './test';
 }
