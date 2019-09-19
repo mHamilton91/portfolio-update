@@ -119,7 +119,8 @@ nav .links li a:hover {
 }
 
 @media screen and (max-width: 350px) {
-  .logo {
+  nav .logo {
+    top: 18px;
     width: 45px;
   }
 }

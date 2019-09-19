@@ -24,5 +24,8 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-    @import './test';
+    nav .logo {
+            top: 18px;
+            width: 45px;
+    }
 }

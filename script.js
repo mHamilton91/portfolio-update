@@ -36,7 +36,9 @@ document.addEventListener('click', function(e) {
     }
 });
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', initialSize);
+
+function initialSize() {
     if(window.innerHeight > 650) {
         navbar.style.width = '0';
         navbar.style.height = '100vh';
@@ -44,10 +46,15 @@ window.addEventListener('resize', function() {
     } else {
         navbar.style.width = '100vw';
         navbar.style.height = '80px';
-        logo.style.left = 'calc(100vw - 70px)';
+        if(window.innerWidth > 350) {
+            logo.style.left = 'calc(100vw - 70px)';
+        } else {
+            logo.style.left = 'calc(100vw - 15%)';
+        }
     }
-});
+}
 
+initialSize();
 //Possibly add in navbar close on screen resize
 
 
