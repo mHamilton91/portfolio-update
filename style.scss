@@ -9,14 +9,22 @@ html, body {
     height: 100%;
 }
 
-body {
+/*body {
     background: #000 url("images/background.jpg") no-repeat fixed center center;
     background-size: cover;
-}
+}*/
 
 @import './navbar-portrait';
+@import './header';
 
-
+section {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: #000;
+}
 
 @media screen and (max-height: 650px) {
     @import './navbar-landscape';
@@ -29,3 +37,4 @@ body {
             width: 45px;
     }
 }
+

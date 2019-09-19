@@ -1,6 +1,8 @@
 let logo = document.querySelector(".logo");
 let toggleNav = document.querySelector(".navbarLink");
 let navbar = document.querySelector("nav");
+let listItems = document.querySelectorAll("li");
+let profilePic = document.querySelector(".profile");
 
 
 //When the logo is clicked the navbar either opens or closes
@@ -11,10 +13,18 @@ toggleNav.addEventListener('click', function() {
         if(navbar.offsetWidth === 350) {
             navbar.style.width = '0';
             logo.style.left = '10px';
+            for(let i = 0; i < listItems.length; i++) {
+                listItems[i].style.left = '300px';
+            }
+            profilePic.style.opacity = '0';
         } else {
             //Opens the navbar
             navbar.style.width = '350px';
             logo.style.left = '275px';
+            for(let i = 0; i < listItems.length; i++) {
+                listItems[i].style.left = '0';
+            }
+            profilePic.style.opacity = '1';
         }
     } else {
         if(navbar.offsetHeight === 350) {
@@ -47,7 +57,7 @@ function initialSize() {
         navbar.style.width = '100vw';
         navbar.style.height = '80px';
         if(window.innerWidth > 350) {
-            logo.style.left = 'calc(100vw - 70px)';
+            logo.style.left = 'calc(100vw - 100px)';
         } else {
             logo.style.left = 'calc(100vw - 15%)';
         }
