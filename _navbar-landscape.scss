@@ -11,13 +11,12 @@ nav {
         left: calc(100vw - 100px);
     }
     .links {
-        position: absolute;
         top: 130px;
         left: 50%;
         transform: translateX(-50%);
         li {
             margin: 10px 0;
-            left: 0;
+            left: calc(100vh*2);
         }
     }
 }
