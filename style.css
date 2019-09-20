@@ -172,6 +172,7 @@ section {
   }
   nav .links li {
     margin: 10px 0;
+    left: 0;
   }
 }
 

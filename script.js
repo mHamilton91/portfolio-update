@@ -53,6 +53,7 @@ function initialSize() {
         navbar.style.width = '0';
         navbar.style.height = '100vh';
         logo.style.left = '10px';
+        
     } else {
         navbar.style.width = '100vw';
         navbar.style.height = '80px';
@@ -60,6 +61,9 @@ function initialSize() {
             logo.style.left = 'calc(100vw - 100px)';
         } else {
             logo.style.left = 'calc(100vw - 15%)';
+        }
+        for(let i = 0; i < listItems.length; i++) {
+            listItems[i].style.left = '0';
         }
     }
 }
