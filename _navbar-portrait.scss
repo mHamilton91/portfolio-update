@@ -29,14 +29,13 @@ nav {
         -moz-tap-highlight-color:  rgba(255, 255, 255, 0); 
         font-size: 2em;
         white-space: nowrap;
-        font-family: 'Josefin Sans', sans-serif;
         span {
-            color: #00ada5;
+            color: #FF9F1C;
         }
     }
     .profile {
         width: 200px;
-        border: 2px solid #00ada5;
+        border: 2px solid #FF9F1C;
         border-radius: 50%;
         position: absolute;
         top: 15%;
@@ -59,9 +58,8 @@ nav {
                 text-decoration: none;
                 color: #FFF;
                 font-size: 1.5em;
-                font-family: 'Josefin Sans', sans-serif;
                 &:hover {
-                    color: #00ada5;
+                    color: #FF9F1C;
                 }
             }
         }
