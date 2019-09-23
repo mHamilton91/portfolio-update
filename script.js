@@ -3,6 +3,7 @@ let toggleNav = document.querySelector(".navbarLink");
 let navbar = document.querySelector("nav");
 let listItems = document.querySelectorAll("li");
 let profilePic = document.querySelector(".profile");
+let scrollBtn = document.querySelector(".scroll");
 
 function close(size) {
     if(size === 'large') {
@@ -90,5 +91,18 @@ document.addEventListener('click', function(e) {
 window.addEventListener('resize', initialSize);
 initialSize();
 
+window.addEventListener('scroll', function() {
+    let currentPosition = window.pageYOffset;
+    let height = window.innerHeight;
 
+    if(currentPosition > height) {
+        scrollBtn.style.opacity = '1';
+    } else if(currentPosition < 300) {
+        scrollBtn.style.opacity = '0';
+    }
+});
+
+scrollBtn.addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
 
