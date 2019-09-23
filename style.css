@@ -123,7 +123,7 @@ header {
 
 header div {
   position: relative;
-  top: 35%;
+  top: 20%;
   left: 50%;
   width: 90%;
   -webkit-transform: translateX(-50%);
@@ -134,7 +134,7 @@ header div {
 header .tag {
   color: #FFF;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bolder;
   font-family: 'Vollkorn SC', cursive;
 }
@@ -188,6 +188,9 @@ section {
   nav .links li {
     margin: 10px 0;
     left: calc(100vh*2);
+  }
+  header h1 {
+    font-size: 2em;
   }
 }
 
