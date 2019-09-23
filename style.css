@@ -123,7 +123,7 @@ header {
 
 header div {
   position: relative;
-  top: 20%;
+  top: 40vh;
   left: 50%;
   width: 90%;
   -webkit-transform: translateX(-50%);
@@ -134,7 +134,7 @@ header div {
 header .tag {
   color: #FFF;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 10vh;
   font-weight: bolder;
   font-family: 'Vollkorn SC', cursive;
 }
