@@ -8,15 +8,25 @@ header {
         position: relative;
         top: 20%;
         left: 50%;
-        width: 90%;
+        width: 80%;
         transform: translateX(-50%);
         text-align: center;
+        z-index: 5;
     }
     .tag {
         color: #FFF;
         text-transform: uppercase;
-        font-size: 3em;
+        font-size: 500%;
         font-weight: bolder;
         font-family: 'Vollkorn SC', cursive;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        .tag {
+            font-size: 300%;
+        }
     }
 }

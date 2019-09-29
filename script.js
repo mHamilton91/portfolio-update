@@ -8,7 +8,7 @@ let scrollBtn = document.querySelector(".scroll");
 function close(size) {
     if(size === 'large') {
         navbar.style.width = '0';
-        logo.style.left = '10px';
+        logo.style.left = '0px';
         //Moves list items farther to the right so they can slide in when the navbar is opened
         for(let i = 0; i < listItems.length; i++) {
             listItems[i].style.left = '300px';
