@@ -124,7 +124,7 @@ header div {
   position: relative;
   top: 20%;
   left: 50%;
-  width: 80%;
+  width: 75%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
